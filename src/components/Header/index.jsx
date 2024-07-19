@@ -1,13 +1,16 @@
 import { Link } from 'react-router-dom';
+import Logo from './img/logo.png';
+import './styles/css/header.css';
 
 function Header() {
     return (
-        <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/error">Error</Link>
-            <Link to="/housing">Housing</Link>
-        </nav>
+        <header>
+            <img src={Logo} alt="Logo du site Kasa" />
+            <nav>
+                <Link to="/">Accueil</Link>
+                <Link to="/about">A Propos</Link>
+            </nav>
+        </header>
     );
 };
 
