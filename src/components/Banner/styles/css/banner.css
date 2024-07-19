@@ -8,6 +8,13 @@
   text-align: center;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .banner {
+    margin: 25px 15px;
+    height: 150px;
+    text-align: start;
+  }
+}
 .banner__overlay {
   position: absolute;
   top: 0;
@@ -23,4 +30,10 @@
   margin: 0;
   color: white;
   font-size: 3.5em;
+}
+@media (max-width: 768px) {
+  .banner__overlay--title {
+    width: 75%;
+    font-size: 1.5em;
+  }
 }

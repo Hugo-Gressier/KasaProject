@@ -4,13 +4,26 @@ header {
     align-items: center;
     margin: 25px 50px;
 
+    @media (max-width: 768px) {
+        margin: 15px 15px;
+    }
+
     img {
         height: 50px;
+
+        @media (max-width: 768px) {
+            height: 35px;
+        }
     }
 
     nav {
         display: flex;
         font-size: 1.25em;
         gap: 50px;
+
+        @media (max-width: 768px) {
+            font-size: 1em;
+            gap: 25px;
+        }
     }
 }

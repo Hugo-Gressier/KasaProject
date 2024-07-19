@@ -8,6 +8,14 @@
   background: #F6F6F6;
   gap: 75px;
 }
+@media (max-width: 768px) {
+  .cards {
+    margin: 25px 0;
+    padding: 15px;
+    background: none;
+    gap: 25px;
+  }
+}
 
 .card {
   height: 350px;
@@ -15,6 +23,12 @@
   position: relative;
   border-radius: 10px;
   overflow: hidden;
+}
+@media (max-width: 768px) {
+  .card {
+    height: 250px;
+    width: 100%;
+  }
 }
 .card img {
   height: 100%;
@@ -30,4 +44,9 @@
   color: white;
   font-size: 1.25em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+}
+@media (max-width: 768px) {
+  .card h2 {
+    font-size: 1em;
+  }
 }

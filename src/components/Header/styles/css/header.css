@@ -4,11 +4,27 @@ header {
   align-items: center;
   margin: 25px 50px;
 }
+@media (max-width: 768px) {
+  header {
+    margin: 15px 15px;
+  }
+}
 header img {
   height: 50px;
+}
+@media (max-width: 768px) {
+  header img {
+    height: 35px;
+  }
 }
 header nav {
   display: flex;
   font-size: 1.25em;
   gap: 50px;
+}
+@media (max-width: 768px) {
+  header nav {
+    font-size: 1em;
+    gap: 25px;
+  }
 }

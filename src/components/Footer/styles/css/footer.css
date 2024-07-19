@@ -8,3 +8,12 @@ footer {
   color: white;
   gap: 50px;
 }
+@media (max-width: 768px) {
+  footer {
+    padding: 50px 50px;
+    text-align: center;
+  }
+  footer img {
+    height: 35px;
+  }
+}
