@@ -8,7 +8,7 @@
     text-align: center;
     overflow: hidden;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         margin: 25px 15px;
         height: 150px;
         text-align: start;
@@ -25,13 +25,18 @@
         justify-content: center;
         align-items: center;
 
+        @media (max-width: 768px) {
+            justify-content: flex-start;
+            padding-left: 15px;
+            padding-right: 50px;
+        }
+
         &--title {
             margin: 0;
             color: white;
             font-size: 3.5em;
 
-            @media (max-width: 768px) {
-                width: 75%;
+            @media (max-width: 800px) {
                 font-size: 1.5em;
             }
         }

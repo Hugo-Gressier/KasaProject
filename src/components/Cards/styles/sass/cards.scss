@@ -2,15 +2,15 @@
     margin: 50px;
     border-radius: 25px;
     padding: 75px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background: #F6F6F6;
     gap: 75px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         margin: 25px 0;
         padding: 15px;
+        grid-template-columns: 1fr;
         background: none;
         gap: 25px;
     }
@@ -18,12 +18,12 @@
 
 .card {
     height: 350px;
-    width: 350px;
+    width: 100%;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         height: 250px;
         width: 100%;
     }
@@ -43,7 +43,7 @@
         font-size: 1.25em;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
 
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             font-size: 1em;
         }
     }

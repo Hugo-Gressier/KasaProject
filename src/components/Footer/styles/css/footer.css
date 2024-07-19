@@ -10,7 +10,7 @@ footer {
 }
 @media (max-width: 768px) {
   footer {
-    padding: 50px 50px;
+    padding: 50px;
     text-align: center;
   }
   footer img {

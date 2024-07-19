@@ -8,7 +8,7 @@
   text-align: center;
   overflow: hidden;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .banner {
     margin: 25px 15px;
     height: 150px;
@@ -26,14 +26,20 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .banner__overlay {
+    justify-content: flex-start;
+    padding-left: 15px;
+    padding-right: 50px;
+  }
+}
 .banner__overlay--title {
   margin: 0;
   color: white;
   font-size: 3.5em;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .banner__overlay--title {
-    width: 75%;
     font-size: 1.5em;
   }
 }

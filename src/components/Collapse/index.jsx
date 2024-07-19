@@ -16,7 +16,7 @@ const Collapse = ({ title, children }) => {
                 aria-expanded={isOpen}
             >
                 {title}
-                <i class={`fa-solid fa-chevron-up ${isOpen ? 'rotate' : ''}`}></i>
+                <i className={`fa-solid fa-chevron-up ${isOpen ? 'rotate-open' : 'rotate-closed'}`}></i>
             </button>
             <div className={`collapse__content ${isOpen ? 'open' : 'closed'}`}>
                 {children}

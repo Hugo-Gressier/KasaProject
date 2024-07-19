@@ -10,9 +10,25 @@
   margin: 15px 0;
   width: 80%;
 }
+@media (max-width: 1024px) {
+  .collapse {
+    margin: 15px 15px;
+    width: auto;
+  }
+}
 .collapse__toggle {
   width: 100%;
 }
+@media (max-width: 1024px) {
+  .collapse__toggle {
+    width: 100%;
+  }
+}
 .collapse__content {
   width: 100%;
+}
+@media (max-width: 1024px) {
+  .collapse__content {
+    width: 100%;
+  }
 }

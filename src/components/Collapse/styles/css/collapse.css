@@ -32,7 +32,11 @@
   padding: 15px;
   color: black;
 }
-.collapse .rotate {
+.collapse .rotate-open {
   transform: rotate(-180deg);
+  transition: transform 0.25s ease;
+}
+.collapse .rotate-closed {
+  transform: rotate(0deg);
   transition: transform 0.25s ease;
 }
