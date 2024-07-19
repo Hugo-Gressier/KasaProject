@@ -1,0 +1,38 @@
+.collapse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.collapse__toggle {
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background: #FF6060;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  color: white;
+  font-size: 1.5em;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.collapse__content {
+  max-height: 0;
+  padding: 0 15px;
+  background: #F6F6F6;
+  transition: max-height 0.25s ease, padding 0.25s ease;
+  overflow: hidden;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-sizing: border-box;
+}
+.collapse__content.open {
+  max-height: 500px;
+  padding: 15px;
+  color: black;
+}
+.collapse .rotate {
+  transform: rotate(-180deg);
+  transition: transform 0.25s ease;
+}

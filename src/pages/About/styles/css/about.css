@@ -1,0 +1,18 @@
+.container {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.collapse {
+  margin: 15px 0;
+  width: 80%;
+}
+.collapse__toggle {
+  width: 100%;
+}
+.collapse__content {
+  width: 100%;
+}
