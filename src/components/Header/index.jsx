@@ -13,7 +13,9 @@ function Header() {
 
     return (
         <header>
-            <img src={Logo} alt="Logo du site Kasa" />
+            <Link to="/">
+                <img src={Logo} alt="Logo du site Kasa" />
+            </Link>
             <nav>
                 <Link
                     className={`nav-link ${activeLink === '/' ? 'active' : ''}`}

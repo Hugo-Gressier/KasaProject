@@ -1,0 +1,22 @@
+.error {
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FF6060;
+    gap: 100px;
+
+    h1 {
+        font-size: 20em;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+}
