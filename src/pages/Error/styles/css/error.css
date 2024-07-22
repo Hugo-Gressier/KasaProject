@@ -1,5 +1,5 @@
 .error {
-  margin-bottom: 150px;
+  margin: 150px 0 150px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,8 +10,20 @@
 .error h1 {
   font-size: 20em;
 }
+@media (max-width: 1024px) {
+  .error h1 {
+    font-size: 5em;
+  }
+}
 .error p {
   font-size: 2em;
+}
+@media (max-width: 1024px) {
+  .error p {
+    padding: 0 25px;
+    text-align: center;
+    font-size: 1.5em;
+  }
 }
 .error a {
   color: black;
