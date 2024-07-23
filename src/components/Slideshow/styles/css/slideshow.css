@@ -1,0 +1,34 @@
+.slideshow {
+  position: relative;
+  width: 100%;
+  border-radius: 25px;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slideshow img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.slideshow button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 5em;
+}
+.slideshow button:first-of-type {
+  left: 10px;
+}
+.slideshow button:last-of-type {
+  right: 10px;
+}
