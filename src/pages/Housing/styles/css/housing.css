@@ -20,23 +20,25 @@
 .housing__title p {
   font-size: 1.25em;
 }
-.housing__host {
+.housing__infos {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
 }
-.housing__tags {
+.housing__infos--tags {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
 }
-.housing__tags--tag {
+.housing__infos--tags .tag {
   height: 25px;
-  width: 125px;
+  min-width: 125px;
+  padding: 0 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   border-radius: 10px;
   background: #FF6060;
   color: white;

@@ -23,15 +23,15 @@ const Housing = ({ data }) => {
                     <h1>{housingData.title}</h1>
                     <p>{housingData.location}</p>
                 </div>
-                <div className="housing__host">
-                    <Host host={housingData.host} />
-                    <Rating rating={housingData.rating} />
-                </div>
+                <Host host={housingData.host} />
             </article>
-            <div className="housing__tags">
+            <div className="housing__infos">
+                <div className="housing__infos--tags">
                 {housingData.tags.map((tag, index) => (
-                    <span key={index} className="housing__tags--tag">{tag}</span>
+                    <span key={index} className="tag">{tag}</span>
                 ))}
+                </div>
+                <Rating rating={housingData.rating} />
             </div>
             <div className="collapse-container">
                 <Collapse title="Description">

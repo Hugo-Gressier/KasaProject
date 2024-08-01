@@ -25,28 +25,30 @@
         }
     }
 
-    &__host {
+    &__infos {
         display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    &__tags {
-        display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
-        gap: 15px;
-
-        &--tag {
-            height: 25px;
-            width: 125px;
+        
+        &--tags {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
-            border-radius: 10px;
-            background: #FF6060;
-            color: white;
-            font-weight: 500;
+            gap: 15px;
+    
+            .tag {
+                height: 25px;
+                min-width: 125px;
+                padding: 0 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                border-radius: 10px;
+                background: #FF6060;
+                color: white;
+                font-weight: 500;
+            }
         }
     }
 
