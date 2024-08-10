@@ -16,6 +16,11 @@
         font-size: 1.5em;
         box-sizing: border-box;
         cursor: pointer;
+
+        @media (max-width: 1024px) {
+            height: 30px;
+            font-size: 1em;
+        }
     }
     
     &__content {

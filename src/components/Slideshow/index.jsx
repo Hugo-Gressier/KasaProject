@@ -21,6 +21,9 @@ const Slideshow = ({ images }) => {
             <button onClick={nextSlide}>
                 <i className="fas fa-chevron-right"></i>
             </button>
+            <div className="slideshow__counter">
+                {currentIndex + 1}/{images.length}
+            </div>
         </div>
     );
 };

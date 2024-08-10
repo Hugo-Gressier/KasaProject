@@ -16,8 +16,7 @@
     gap: 25px;
   }
 }
-
-.card {
+.cards__card {
   height: 350px;
   width: 100%;
   position: relative;
@@ -25,18 +24,17 @@
   overflow: hidden;
 }
 @media (max-width: 1024px) {
-  .card {
+  .cards__card {
     height: 250px;
     width: 100%;
   }
 }
-.card img {
+.cards__card img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-.card h2 {
+.cards__card h2 {
   width: 75%;
   position: absolute;
   bottom: 15px;
@@ -46,7 +44,7 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
 }
 @media (max-width: 600px) {
-  .card h2 {
+  .cards__card h2 {
     font-size: 1em;
   }
 }

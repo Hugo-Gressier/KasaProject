@@ -1,53 +1,127 @@
 .housing {
   margin: 50px;
 }
-.housing article {
+@media (max-width: 1024px) {
+  .housing {
+    margin: 15px;
+  }
+}
+.housing__infos {
+  height: 125px;
+  padding: 25px 0;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .housing__infos {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+.housing__infos--title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
   padding: 25px 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.housing__title {
-  display: flex;
   flex-direction: column;
-  gap: 15px;
+  justify-content: space-between;
 }
-.housing__title h1 {
+@media (max-width: 1024px) {
+  .housing__infos--title .title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .housing__infos--title {
+    position: relative;
+    padding: 0;
+    gap: 25px;
+  }
+}
+.housing__infos--title h1 {
   color: #FF6060;
   font-size: 2.5em;
   font-weight: 500;
 }
-.housing__title p {
+@media (max-width: 1024px) {
+  .housing__infos--title h1 {
+    font-size: 1.25em;
+  }
+}
+.housing__infos--title p {
   font-size: 1.25em;
 }
-.housing__infos {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media (max-width: 1024px) {
+  .housing__infos--title p {
+    font-size: 1em;
+  }
 }
-.housing__infos--tags {
+.housing__infos--title .tags {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   gap: 15px;
 }
-.housing__infos--tags .tag {
+.housing__infos--title .tags .tag {
   height: 25px;
   min-width: 125px;
   padding: 0 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  text-wrap: nowrap;
   border-radius: 10px;
   background: #FF6060;
   color: white;
   font-weight: 500;
 }
+@media (max-width: 1024px) {
+  .housing__infos--title .tags .tag {
+    min-width: 100px;
+    font-size: 0.75em;
+  }
+}
+.housing__infos--host {
+  padding: 25px 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .housing__infos--host {
+    padding: 0;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    position: relative;
+    flex-direction: row-reverse;
+  }
+}
 .housing .collapse-container {
   margin-top: 25px;
   display: flex;
   gap: 50px;
+}
+@media (max-width: 1024px) {
+  .housing .collapse-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .housing .collapse-container .collapse {
+    width: 100%;
+  }
 }
 .housing .collapse-container ul {
   list-style-type: none;

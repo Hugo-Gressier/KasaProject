@@ -3,6 +3,11 @@
     font-size: 1.5em;
     color: #E3E3E3;
 
+    @media (max-width: 1024px) {
+        align-self: center;
+        font-size: 1em;
+    }
+
     .fa-star {
         margin: 0 2px;
     }

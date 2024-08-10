@@ -8,6 +8,10 @@
     align-items: center;
     overflow: hidden;
 
+    @media (max-width: 1024px) {
+        height: 250px;
+    }
+
     img {
         height: 100%;
         width: 100%;
@@ -25,6 +29,11 @@
         color: white;
         font-size: 5em;
         cursor: pointer;
+
+        @media (max-width: 1024px) {
+            font-size: 1.5em;
+            padding: 0;
+        }
     }
 
     button:first-of-type {
@@ -33,5 +42,20 @@
 
     button:last-of-type {
         right: 10px;
+    }
+
+    &__counter {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 1.25em;
+        font-weight: 500;
+        text-shadow: 1px 1px 1px black, 0 0 1em black;
+
+        @media (max-width: 1024px) {
+            display: none;
+        }
     }
 }

@@ -18,21 +18,23 @@ const Housing = ({ data }) => {
     return (
         <div className="housing">
             <Slideshow images={housingData.pictures} />
-            <article>
-                <div className="housing__title">
-                    <h1>{housingData.title}</h1>
-                    <p>{housingData.location}</p>
+            <article className="housing__infos">
+                <div className="housing__infos--title">
+                    <div className="title">
+                        <h1>{housingData.title}</h1>
+                        <p>{housingData.location}</p>
+                    </div>
+                    <div className="tags">
+                        {housingData.tags.map((tag, index) => (
+                            <span key={index} className="tag">{tag}</span>
+                        ))}
+                    </div>
                 </div>
-                <Host host={housingData.host} />
+                <div className="housing__infos--host">
+                    <Host host={housingData.host} />
+                    <Rating rating={housingData.rating} />
+                </div>
             </article>
-            <div className="housing__infos">
-                <div className="housing__infos--tags">
-                {housingData.tags.map((tag, index) => (
-                    <span key={index} className="tag">{tag}</span>
-                ))}
-                </div>
-                <Rating rating={housingData.rating} />
-            </div>
             <div className="collapse-container">
                 <Collapse title="Description">
                     <p>{housingData.description}</p>
