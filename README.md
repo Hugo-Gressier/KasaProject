@@ -1,3 +1,3 @@
 ## Kasa website&thinsp;:
 
-- **Version&thinsp;:** 1.0.0
+- **Version&thinsp;:** 1.1.0

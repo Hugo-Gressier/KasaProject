@@ -9,6 +9,12 @@ import './styles/css/housing.css';
 
 const Housing = ({ data }) => {
     const { id } = useParams();
+
+    if (!data) {
+        console.error('Error');
+        return null;
+    }
+
     const housingData = data.find(item => item.id === id);
 
     if (!housingData) {

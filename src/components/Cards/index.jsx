@@ -2,6 +2,11 @@ import { Link } from 'react-router-dom';
 import './styles/css/cards.css';
 
 const Cards = ({ data }) => {
+    if (!data) {
+        console.error('Error');
+        return null;
+    }
+
     return (
         <div className="cards">
             {data.map((item, index) => (
