@@ -14,16 +14,22 @@ const Slideshow = ({ images }) => {
 
     return (
         <div className="slideshow">
-            <button onClick={previousSlide}>
-                <i className="fas fa-chevron-left"></i>
-            </button>
+            {images.length > 1 && (
+                <button onClick={previousSlide}>
+                    <i className="fas fa-chevron-left"></i>
+                </button>
+            )}
             <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
-            <button onClick={nextSlide}>
-                <i className="fas fa-chevron-right"></i>
-            </button>
-            <div className="slideshow__counter">
-                {currentIndex + 1}/{images.length}
-            </div>
+            {images.length > 1 && (
+                <button onClick={nextSlide}>
+                    <i className="fas fa-chevron-right"></i>
+                </button>
+            )}
+            {images.length > 1 && (
+                <div className="slideshow__counter">
+                    {currentIndex + 1}/{images.length}
+                </div>
+            )}
         </div>
     );
 };
